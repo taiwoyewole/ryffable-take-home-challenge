@@ -21,10 +21,9 @@ You will be assessed based on:
 - error handling
 - threading safety
 - coding best practices / design patterns
-
-Features completed - 25%
-Time - 25%
-Code Quality 50%
+- Features completed
+- Time
+- Code Quality
 
 ## Submission
 Kindly submit your production ready code by creating a pull request to github, and deploying the final product through heroku.
