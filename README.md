@@ -1,2 +1,2 @@
-# ryffable-take-home-challenge
+# Ryffable Challenge Take Home
 Short technical challenge for ryffable.
