@@ -10,8 +10,16 @@ Remember to consistently commit your progress throughout your development!
 ## Getting Started
 You will need to use the following technologies for the project:
 
-NextJS for frontend
-The front-end does not need to be fancy. Please use NextJS and Tailwind CSS for the frontend.
+## Task
+- Create a test api endpoint using next js api route with the following parameters: name, place, animal, food, things
+- Populate it with data in alphabetucal order from A to Z.
+- Create a table with pagination and search functionality using next js frontend
+- Populate the table with the data from the api endpoint you created.
+- Submit your code by sending a PR to this repo.
+
+### Note
+- Use NextJS and Tailwind for frontend
+- The front-end does not need to be fancy.
 
 ## Metrics:
 You will be assessed based on:
