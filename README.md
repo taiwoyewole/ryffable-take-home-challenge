@@ -15,7 +15,6 @@ You will need to use the following technologies for the project:
 - Populate it with data in alphabetucal order from A to Z.
 - Create a table with pagination and search functionality using next js frontend
 - Populate the table with the data from the api endpoint you created.
-- Submit your code by sending a PR to this repo.
 
 ### Note
 - Use NextJS and Tailwind for frontend
