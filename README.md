@@ -18,7 +18,6 @@ You will need to use the following technologies for the project:
 
 ### Note
 - Use NextJS and Tailwind for frontend
-- The front-end does not need to be fancy.
 
 ## Metrics:
 You will be assessed based on:
