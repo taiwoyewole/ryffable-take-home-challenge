@@ -3,7 +3,7 @@ Short technical challenge for ryffable.
 
 Congrats in passing Ryffable's first round of interview!
 
-Kindly find the project assignment. You have 6 hours to complete your assignment from the first time you get the email.
+Kindly find the project assignment. You have 24 hours to complete your assignment from the first time you get the email.
 
 Remember to consistently commit your progress throughout your development!
 
