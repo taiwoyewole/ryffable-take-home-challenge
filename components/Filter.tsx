@@ -1,4 +1,4 @@
-export const FilterComponent = ({ filterText, onFilter, onClear }) => (
+export const FilterComponent = ({ filterText, onFilter, onClear }: any) => (
 	<div className='mb-10'>
 		<input
 			id='search'

@@ -1,13 +1,13 @@
-import { useState, useMemo } from 'react';
+import { useState, useMemo, SetStateAction } from 'react';
 import DataTable from 'react-data-table-component';
 import { FilterComponent } from '../Filter';
 
-export const CustomTable = ({
+export const CustomTable: JSX.Element = ({
 	columns,
 	data,
 	isLoading,
 	onSelectedRowsChange,
-}) => {
+}: any) => {
 	const [filter, setFilter] = useState('');
 	const [resetPaginationToggle, setResetPaginationToggle] = useState(false);
 
@@ -26,7 +26,9 @@ export const CustomTable = ({
 
 		return (
 			<FilterComponent
-				onFilter={(e) => setFilter(e.target.value)}
+				onFilter={(e: { target: { value: SetStateAction<string> } }) =>
+					setFilter(e.target.value)
+				}
 				onClear={handleClear}
 				filterText={filter}
 			/>

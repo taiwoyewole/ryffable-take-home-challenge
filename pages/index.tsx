@@ -1,9 +1,18 @@
 import Head from 'next/head';
 import React from 'react';
+import { TableColumn } from 'react-data-table-component';
 import useSwr from 'swr';
 import { CustomTable } from '../components/CustomTable/Table';
 
-const fetcher = (url) => fetch(url).then((res) => res.json());
+const fetcher = (url: any) => fetch(url).then((res) => res.json());
+
+type DataRow = {
+	name: string;
+	place: string;
+	animal: string;
+	food: string;
+	things: string;
+};
 
 const Home = () => {
 	const { data, error } = useSwr('/api/users', fetcher);
@@ -11,7 +20,7 @@ const Home = () => {
 	if (error) return <div>Failed to load users</div>;
 	if (!data) return <div>Loading...</div>;
 
-	const columns = [
+	const columns: TableColumn<DataRow>[] = [
 		{
 			name: 'Name',
 			sortable: true,
