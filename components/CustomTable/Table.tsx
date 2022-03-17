@@ -2,12 +2,7 @@ import { useState, useMemo, SetStateAction } from 'react';
 import DataTable from 'react-data-table-component';
 import { FilterComponent } from '../Filter';
 
-export const CustomTable: JSX.Element = ({
-	columns,
-	data,
-	isLoading,
-	onSelectedRowsChange,
-}: any) => {
+export const CustomTable: React.FC = ({ columns, data }: any) => {
 	const [filter, setFilter] = useState('');
 	const [resetPaginationToggle, setResetPaginationToggle] = useState(false);
 
@@ -41,8 +36,6 @@ export const CustomTable: JSX.Element = ({
 			columns={columns}
 			data={filteredItems}
 			pagination
-			onSelectedRowsChange={onSelectedRowsChange}
-			progressPending={isLoading}
 			subHeader
 			subHeaderComponent={subHeaderComponentMemo}
 			paginationResetDefaultPage={resetPaginationToggle}
