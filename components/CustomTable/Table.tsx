@@ -12,7 +12,7 @@ export const CustomTable: JSX.Element = ({
 	const [resetPaginationToggle, setResetPaginationToggle] = useState(false);
 
 	const filteredItems = data.filter(
-		(item) =>
+		(item: any) =>
 			item.name && item.name.toLowerCase().includes(filter.toLowerCase())
 	);
 
